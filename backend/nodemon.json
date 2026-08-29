@@ -1,0 +1,29 @@
+{
+  "//": "nodemon watches the backend source and restarts on change.",
+
+  "watch": [
+    "src",
+    "package.json",
+    "nodemon.json",
+    ".env"
+  ],
+
+  "ext": "js,json,mjs,cjs,env",
+
+  "ignore": [
+    "src/**/*.test.js",
+    "src/**/*.spec.js",
+    "dist",
+    "coverage",
+    "node_modules"
+  ],
+
+  "exec": "node src/server.js",
+
+  "env": {
+    "NODE_ENV": "development"
+  },
+
+  "delay": 250,
+  "verbose": true
+}

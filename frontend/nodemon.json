@@ -1,0 +1,33 @@
+{
+  "//": "nodemon wraps the Vite dev server and only restarts it on config / dep changes.  Source files under src/ are handled by Vite HMR and MUST be ignored here, otherwise every edit would force a full restart and lose HMR state.",
+
+  "watch": [
+    "vite.config.ts",
+    "vite.config.js",
+    "tsconfig.json",
+    "tsconfig.node.json",
+    "package.json",
+    "nodemon.json",
+    "index.html",
+    ".env",
+    ".env.local"
+  ],
+
+  "ext": "ts,js,json,mjs,cjs,html,env",
+
+  "ignore": [
+    "src/**",
+    "dist",
+    "node_modules",
+    "public/**"
+  ],
+
+  "exec": "vite",
+
+  "env": {
+    "NODE_ENV": "development"
+  },
+
+  "delay": 300,
+  "verbose": true
+}

@@ -1,0 +1,42 @@
+/* Theme variables.  Switch by setting <html data-theme="light"> or "dark". */
+
+:root,
+:root[data-theme='dark'] {
+  --bg:            #0f172a;
+  --bg-elev:       #1e293b;
+  --bg-elev-2:     #273449;
+  --border:        #334155;
+  --text:          #e2e8f0;
+  --text-muted:    #94a3b8;
+  --text-dim:      #64748b;
+  --primary:       #3b82f6;
+  --primary-hover: #2563eb;
+  --danger:        #ef4444;
+  --danger-hover:  #dc2626;
+  --success:       #6ee7b7;
+  --success-bg:    #064e3b;
+  --error:         #fca5a5;
+  --error-bg:      #4c1d24;
+  --input-bg:      #0f172a;
+  --shadow:        0 1px 3px rgba(0,0,0,0.3);
+}
+
+:root[data-theme='light'] {
+  --bg:            #f8fafc;
+  --bg-elev:       #ffffff;
+  --bg-elev-2:     #f1f5f9;
+  --border:        #e2e8f0;
+  --text:          #0f172a;
+  --text-muted:    #475569;
+  --text-dim:      #94a3b8;
+  --primary:       #2563eb;
+  --primary-hover: #1d4ed8;
+  --danger:        #dc2626;
+  --danger-hover:  #b91c1c;
+  --success:       #047857;
+  --success-bg:    #d1fae5;
+  --error:         #b91c1c;
+  --error-bg:      #fee2e2;
+  --input-bg:      #ffffff;
+  --shadow:        0 1px 3px rgba(0,0,0,0.08);
+}
